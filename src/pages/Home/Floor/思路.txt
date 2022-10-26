@@ -1,0 +1,10 @@
+         <div v-for="item in imgs" :key="item.id" :class="item.length == 1 ? 'split center' : 'split'">
+              <img v-if="item.length == 1" :src="item[0]" />
+              <span v-if="item.length == 2" class="floor-x-line"></span>
+              <div v-if="item.length == 2" class="floor-conver-pit">
+                <img :src="item[0]" />
+              </div>
+              <div v-if="item.length == 2" class="floor-conver-pit">
+                <img :src="item[1]" />
+              </div>
+            </div>
