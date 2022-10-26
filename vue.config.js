@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+  publicPath: '/Shopping-Mall/',
   transpileDependencies: true,
   productionSourceMap:false,
   lintOnSave:false,
